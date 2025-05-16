@@ -22,7 +22,7 @@ export default (params: VITE_EXPORT_PARAMS): InlineConfig => ({
     tsPaths(),
     core(),
     svgr(),
-    analyzer(),
+    params?.mode === "productionanalyse" && analyzer(),
   ],
   resolve: {
     alias: {

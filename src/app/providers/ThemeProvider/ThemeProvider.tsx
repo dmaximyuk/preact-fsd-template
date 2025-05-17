@@ -1,7 +1,7 @@
 import type { FunctionalComponent } from "preact";
 
 import { useEffect } from "preact/hooks";
-import { useTheme } from "@/shared/lib/hooks";
+import { useTheme } from "@/shared/lib/themes";
 
 import { AppTheme } from "@/shared/config";
 
@@ -16,7 +16,7 @@ const ThemeProvider: FunctionalComponent<ThemeProviderProps> = (props) => {
     console.log("Theme usage:", theme);
   }, [theme]);
 
-  return <div>{props.children}</div>;
+  return <>{props.children}</>;
 };
 
 export default ThemeProvider;

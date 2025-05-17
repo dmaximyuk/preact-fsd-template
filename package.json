@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "ky": "^1.8.1",
     "preact": "^10.26.5",
     "wouter-preact": "^3.7.0"
   },

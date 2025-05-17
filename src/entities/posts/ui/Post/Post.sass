@@ -1,0 +1,16 @@
+.Post
+  --gap: 15px
+  padding: var(--gap)
+  border-radius: var(--gap)
+  overflow: hidden
+  box-sizing: border-box
+  background: color-mix(in srgb, var(--accent) 20%, transparent)
+  margin-bottom: 20px
+
+  &:last-child
+    margin: 0
+
+  &__title
+    width: 100%
+    display: flex
+    gap: calc(var(--gap) / 2)
